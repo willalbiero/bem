@@ -15,7 +15,7 @@ class CreateKitsTable extends Migration
     {
         Schema::create('kits', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
+            $table->string('nome');
             $table->decimal('preco', 8, 2);
             $table->string('tipo_licenca');
             $table->timestamps();
