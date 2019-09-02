@@ -16,11 +16,12 @@ class PedidosController extends Controller
      */
     public function index()
     {
-        
+        /**
+         * Busca todos os pedidos e envia para a view
+         */
         $pedidos = Pedidos::all();
-
-
         return view('layouts.pages.pedidos', ['pedidos' => $pedidos]);
+
     }
 
     /**
@@ -41,6 +42,11 @@ class PedidosController extends Controller
      */
     public function show($id)
     {
+
+        /**
+         * Busca as informações do kit e componentes e os dados de envio
+         */
+
         $pedido = DB::select('SELECT DISTINCT p.id, p.status_pedido, p.preco_total, p.data_pedido, 
         k.nome, ee.estado, ee.pais, ee.endereco, ee.zip_code, p.comentario_pedido, 
         cl.data_contrato, cl.contrato, hp.descricao, 
