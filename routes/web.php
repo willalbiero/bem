@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/meuspedidos', 'PedidosController@index')->name('pedidos');
+Route::get('/buscapedidos/{id}', 'PedidosController@show')->name('busca');

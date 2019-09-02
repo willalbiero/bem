@@ -16,8 +16,9 @@ class CreateContratoLicencaTable extends Migration
         Schema::create('contrato_licenca', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('id_pedido');
-            $table->foreign('id_pedido')->references('id')->on('pedidos');
+            $table->string('contrato');
             $table->timestamp('data_contrato');
+            $table->foreign('id_pedido')->references('id')->on('pedidos');
         });
     }
 

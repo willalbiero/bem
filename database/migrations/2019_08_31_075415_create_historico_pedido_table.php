@@ -16,7 +16,7 @@ class CreateHistoricoPedidoTable extends Migration
         Schema::create('historico_pedido', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('id_pedido');
-            $table->timestamp('data_modificacao');
+            $table->dateTime('data_modificacao');
             $table->string('descricao');
             $table->foreign('id_pedido')->references('id')->on('pedidos');
         });

@@ -1,0 +1,46 @@
+.kit-componentes {
+   border-radius: 10px;
+   border-top: 1px solid #ddd;
+   border-right: 1px solid #ddd;
+   border-left: 1px solid #ddd;
+ }
+ 
+ .dados-pedido {
+   margin-top: 50px;
+   width: auto;
+ }
+ 
+ .historico-pedido {
+   margin-top: 50px;
+   width: auto;
+ }
+ 
+ .pedido-detalhes p{
+   padding-left: 10px;
+   font-weight: 700;
+ }
+ 
+ .name-kit {
+   height: 40;
+   background: #DFF0D8;
+ }
+ .name-kit td {
+   border-radius: 10px 10px 0 0;
+   font-size: 14px;
+   color: #81A171;
+   font-weight: 700;
+ }
+ 
+ 
+ .highlight-kit td{
+   font-size: 12px;
+ }
+
+ .collapsible-body {
+  display: none;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+}
